@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'home_page.dart';
+import '../home_page.dart';
 import 'loading.dart';
 
 class App extends ConsumerWidget {
@@ -14,9 +14,6 @@ class App extends ConsumerWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
-        snackBarTheme: const SnackBarThemeData(
-          behavior: SnackBarBehavior.floating,
-        ),
         textTheme: TextTheme(
             bodyLarge: TextStyle(color: Colors.grey[700]),
             bodyMedium: TextStyle(color: Colors.grey[700]),
