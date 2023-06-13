@@ -5,12 +5,12 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'components/loading.dart';
 
-/// 画面側での共通的な処理をラップした Mixin
-/// in_1: BuildContext
-/// in_2: WidgetRef
-/// in_3: 画面側のイベントハンドラーとして呼び出したい処理
-/// in_4: 処理成功時に表示したいメッセージ
 mixin PageMixin {
+  /// 画面側での共通的な処理をラップした Mixin
+  /// in_1: BuildContext
+  /// in_2: WidgetRef
+  /// in_3: 画面側のイベントハンドラーとして呼び出したい処理
+  /// in_4: 処理成功時に表示したいメッセージ
   Future<void> execute(
     BuildContext context,
     WidgetRef ref, {
